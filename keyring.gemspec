@@ -38,4 +38,5 @@ Gem::Specification.new do |spec|
 
   spec.extensions = %w[ext/mkrf_conf.rb]
 
+  spec.required_ruby_version = '~> 2.3'
 end
