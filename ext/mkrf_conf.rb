@@ -14,7 +14,7 @@ begin
   case Gem::Platform.local.os
   when 'linux'
     warn "*linux: installing gir_ffi-gnome_keyring..."
-    inst.install "gir_ffi-gnome_keyring", '~> 0.0.3'
+    inst.install "gir_ffi-gnome_keyring", ['~> 0.0.3', '< 0.0.11']
   when 'darwin'
     warn '*osx: installing ruby-keychain'
     inst.install 'ruby-keychain', '~> 0.3.2'

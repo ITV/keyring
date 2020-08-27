@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
 
   case Gem::Platform.local.os
     when 'linux'
-      spec.add_dependency "gir_ffi-gnome_keyring", '~> 0.0.3'
+      spec.add_dependency "gir_ffi-gnome_keyring", ['~> 0.0.3', '< 0.0.11']
     when 'darwin'
       spec.add_dependency 'ruby-keychain', '~> 0.3.2'
   end
